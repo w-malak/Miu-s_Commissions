@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Art Commissions</title>
+  <link rel="icon" type="image/x-icon" href="/images/pink_brush.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>🎨 Miu's Art Commissions!!</header>
+    
+    <div class="card">
+      <div class="pricing-table">
+        <div class="pricing-category">
+          <h3>Sketch</h3>
+          <ul>
+            <li>Bust – $8</li>
+            <li class="highlight">Torso – $12</li>
+            <li>Full Body – $16</li>
+          </ul>
+        </div>
+        <div class="pricing-category">
+          <h3>Lineart</h3>
+          <ul>
+            <li>Bust – $14</li>
+            <li class="highlight">Torso – $18</li>
+            <li>Full Body – $22</li>
+          </ul>
+        </div>
+        <div class="pricing-category">
+          <h3>Colored</h3>
+          <ul>
+            <li>Bust – $21</li>
+            <li class="highlight">Torso – $26</li>
+            <li>Full Body – $30</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="extras">
+        <p><span class="highlight">+ Background</span></p>
+        <p><span class="highlight">+ Extra item</span></p>
+        <p><span class="highlight">+ Extra person</span> (price depends on what!)</p>
+        <button class="btn" onclick="alert('Thank you for your interest! Please DM me on Instagram 💌')">Request a Slot</button>
+      </div>
+    </div>
+
+    <!-- 🖼️ Slideshow Section -->
+    <section class="gallery">
+      <h2 style="text-align: center; color: #ff94c2;">🌸 My Art Gallery</h2>
+      <div class="slideshow">
+        <img class="slides fade" src="/images/claire_s&s.jpg" alt="Art 1" onclick="openLightbox(this.src)">
+        <img class="slides fade" src="/images/mason_s&s.jpg" alt="Art 2" onclick="openLightbox(this.src)">
+        <img class="slides fade" src="/images/pandora_chibi.png" alt="Art 3" onclick="openLightbox(this.src)">
+        <img class="slides fade" src="/images/axel_meme.png" alt="Art 4" onclick="openLightbox(this.src)">
+        <img class="slides fade" src="/images/plsuh.png" alt="Art 5" onclick="openLightbox(this.src)">
+
+      </div>
+    </section> 
+
+    <!-- 💌 Contact Section -->
+    <section class="contact">
+      <h2>Let's Talk!</h2>
+      <p>Interested in a commission or have any questions?</p>
+      <a href="https://www.instagram.com/upsidedown.upandown/" target="_blank" class="insta-btn">DM me on Instagram 💌</a>
+    </section>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/766/766550.png" alt="Cute Plant" class="plant" />
+
+    <footer>© 2025 Malak Wadeh – All artwork is custom made with love 💕</footer>
+  </div>
+
+  <!-- 🌟 JavaScript for Slideshow & Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox()">✖</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+</body>
+</html>
